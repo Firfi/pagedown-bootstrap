@@ -29,7 +29,7 @@
 .icon-header,
 .icon-hr-line,
 .icon-reply {
-  background-image: url(Markdown.Editor.Icons.png);
+  background-image: url(../img/Markdown.Editor.Icons.png);
 }
 .icon-globe {
   background-position: 0      0;
@@ -54,6 +54,15 @@
 }
 .icon-reply {
   background-position: -168px 0;
+}
+.icon-undo {
+  background-position: -336px -96px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 .wmd-prompt-background {
   background-color: Black;
