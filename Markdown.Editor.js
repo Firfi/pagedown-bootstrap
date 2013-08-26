@@ -1372,6 +1372,9 @@
             buttons.image = makeButton("wmd-image-button", "Image - Ctrl+G", "icon-picture", bindCommand(function (chunk, postProcessing) {
                 return this.doLinkOrImage(chunk, postProcessing, true);
             }), group2);
+            if (helpOptions && helpOptions.includeCallback) {
+                buttons.include = makeButton("wmd-include-button", "Include - No hotkey", "icon-include", bindCommand(helpOptions.includeCallback));
+            }
 
             group3 = makeGroup(3);
             buttons.olist = makeButton("wmd-olist-button", "Numbered List - Ctrl+O", "icon-list-ol", bindCommand(function (chunk, postProcessing) {
